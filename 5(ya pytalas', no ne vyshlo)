@@ -18,18 +18,18 @@ struct NOTE {
  
 void  vvod(FIO a){
  
-    cout << "Ââåäèòå ôàìèëèþ è èìÿ:";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã´Ã Ã¬Ã¨Ã«Ã¨Ã¾ Ã¨ Ã¨Ã¬Ã¿:";
     cin >> a.FIO;
-    cout << "Ââåäèòå íîìåð òåëåôîíà:";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã :";
     cin >> a.Number;
-    cout << "Ââåäèòå äàòó ðîæäåíèÿ: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã Ã²Ã³ Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿: ";
     cin >> a.Date.Day>>a.Date.Month >>a.Date.Year;
     getchar();
 }
  
  
 void vvod_svedenia(NOTE X[], int i){
-    cout <<"Ñâåäåíèÿ";
+    cout <<"Ã‘Ã¢Ã¥Ã¤Ã¥Ã­Ã¨Ã¿";
  for (i=0;i<N; i++){
    vvod(X[i]);
  }
@@ -56,10 +56,10 @@ void printf_svedenia(NOTE X[], int i){
 int main(){
     NOTE svedenia[30];
     vvod_svedenia(svedenia, 30);
-    cout<<"Íåîòñîðòèðîâàííûé ñïèñîê\n";
+    cout<<"ÃÃ¥Ã®Ã²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã­Ã­Ã»Ã© Ã±Ã¯Ã¨Ã±Ã®Ãª\n";
      printf_svedenia(svedenia, 30);
      sort_svedenia(svedenia, 30);
-   cout<<"Îòñîðòèðîâàííûé ñïèñîê\n";
+   cout<<"ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã­Ã­Ã»Ã© Ã±Ã¯Ã¨Ã±Ã®Ãª\n";
    printf_svedenia(svedenia, 30);
   getchar();
 }
