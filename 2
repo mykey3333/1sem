@@ -1,3 +1,9 @@
+//в одномерном массиве, состоящем из п целых элементов, вычислить:
+//1) количество положительных элементов массива;
+//2) сумму элементов массива, расположенных после последнего элемента, равного
+//нулю.
+//Преобразовать массив таким образом, чтобы сначала располагались все элементы,
+//целая часть которых не превышает 1, а потом — все остальные.
 #include <iostream>
 
 using namespace std;
@@ -5,7 +11,7 @@ using namespace std;
 
 int main() {
     int n, count = 0, number, sum = 0, tmp;
-    cout << "Vvedite summu elementov";
+    cout << "Vvedite kolichestvo elementov";
     cin >> n;
     int arr[n];
     cout << "Vvedite elementy";
