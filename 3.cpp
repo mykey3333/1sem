@@ -1,9 +1,12 @@
+//Уплотнить заданную матрицу, удаляя из нее строки и столбцы, заполненные нулями.
+//Найти номер первой из строк, содержащих хотя бы один положительный
+//элемент.
 #include <iostream>
 #include <conio.h>
 #include <math.h>
 using namespace std;
  
-int **arr, n, m, i,j, y, t;
+int arr, n, m, i,j, y, t;
 int main ()
 {
  
@@ -11,7 +14,7 @@ int main ()
     cin>>n;
     cout<<"vvedite kolichestvo stolbcov massiva: "<< endl;
     cin>>m;
-    arr=new int*[n];
+    arr=new int[n];
     for(i=0; i<n; i++)
        arr[i]=new int[m];
     cout<<"vvedite elementy massiva: "<< endl;
